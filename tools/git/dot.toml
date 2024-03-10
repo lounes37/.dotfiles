@@ -1,3 +1,8 @@
 [global.links]
 ".gitignore" = "~/.gitignore"
 ".gitconfig" = "~/.gitconfig"
+
+
+[linux.installs]
+cmd = "sudo apt-get update && sudo apt-get install git"
+
