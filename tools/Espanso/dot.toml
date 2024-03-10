@@ -1,0 +1,13 @@
+[windows.installs]
+cmd = "winget install --id=Espanso.Espanso  -e --accept-package-agreements --accept-source-agreements"
+
+[windows.links]
+config = "~\\AppData\\Roaming\\espanso\\config"
+match = "~\\AppData\\Roaming\\espanso\\match"
+
+["linux|darwin"]
+installs = false
+
+["linux|darwin".links]
+config = "~/.config/espanso/config"
+match = "~/.config/espanso/match"

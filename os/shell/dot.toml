@@ -1,0 +1,4 @@
+[windows]
+installs = "winget install nilesoft.shell"
+# [windows.links]
+# "shell.nss" = "C:\\Program Files\\Nilesoft Shell\\shell.nss"

@@ -1,0 +1,41 @@
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+matches:
+  ## Emails ##
+  - trigger: ":kko"
+    replace: "K.lounes@OutLook.com"
+
+  - trigger: ":kkg"
+    replace: "K.lounes03@Gmail.com"
+
+  - trigger: ":skiff"
+    replace: "Lounes.Kacel@Skiff.com"
+
+  - trigger: ":proton"
+    replace: "Lounes.Kacel@Protonmail.com"
+
+  ## current date ##
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  - trigger: ":today"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%A %d %B %Y"
+
+  # TIME
+  - trigger: ":now"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M"

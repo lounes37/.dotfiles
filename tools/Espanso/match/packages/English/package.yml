@@ -1,0 +1,21 @@
+matches:
+  - trigger: ":yt"
+    replace: "YouTube"
+
+  - trigger: "doesnt"
+    replace: "doesn't"
+
+  - trigger: "dont"
+    replace: "don't"
+
+  - trigger: "cant"
+    replace: "can't"
+
+  - trigger: "we are"
+    replace: "we're"
+
+  - trigger: "its"
+    replace: "it's"
+
+  - trigger: "you are"
+    replace: "you're"

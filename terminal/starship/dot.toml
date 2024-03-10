@@ -1,0 +1,9 @@
+[windows]
+installs = "scoop install starship"
+depends = ["../tools/scoop"]
+
+[windows.links]
+"starship.toml" = "~/.config/starship/starship.toml"
+
+["linux|darwin".links]
+"starship.toml" = "~/.config/starship.toml"
