@@ -1,3 +1,6 @@
 [windows]
 installs = "sudo choco install dust -y"
 depends = ["../tools/scoop"]
+
+["linux|darwin"]
+installs = false
