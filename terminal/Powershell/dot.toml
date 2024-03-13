@@ -1,0 +1,7 @@
+[windows.links]
+"profile.ps1" = "~/Documents/PowerShell/profile.ps1"
+"PowerShell.config.json" = "~/Documents/PowerShell/PowerShell.config.json"
+
+# [windows.installs]
+# cmd = "cargo install nu"
+# depends = [ "../dev/rust" ]

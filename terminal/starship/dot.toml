@@ -5,5 +5,8 @@ depends = ["../tools/scoop"]
 [windows.links]
 "starship.toml" = "~/.config/starship/starship.toml"
 
+[linux]
+installs = "curl -sS https://starship.rs/install.sh | sh -s -- -y > /dev/null"
+
 ["linux|darwin".links]
 "starship.toml" = "~/.config/starship.toml"
