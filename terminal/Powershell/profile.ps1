@@ -53,7 +53,7 @@ function sha256 { Get-FileHash -Algorithm SHA256 $args }
 
 # eza
 function listlong { eza --icons -lah --color=auto --group-directories-first --hyperlink }
-function ls { eza --icons --grid --color=auto --group-directories-first --hyperlink }
+function list { eza --icons --grid --color=auto --group-directories-first --hyperlink }
 
 # edit profile with notepad
 function Edit-Profile {
@@ -97,6 +97,6 @@ Set-Alias -Name np -Value C:\Windows\notepad.exe
 Set-Alias -Name goh -Value CDH
 Set-Alias -Name yt -Value yt-dlp
 Set-Alias -Name up -Value Update-profile
-Set-Alias -Name ls -Value eza
+Set-Alias -Name ls -Value list
 Set-Alias -Name ll -Value listlong
 Set-Alias admin Open-CurrentFolderAsAdmin
