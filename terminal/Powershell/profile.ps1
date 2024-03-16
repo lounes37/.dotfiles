@@ -1,17 +1,19 @@
 ### PSReadLine ###
+### PSReadLine ###
 $PSReadLineOptions = @{
     HistoryNoDuplicates           = $true
     HistorySearchCursorMovesToEnd = $true
-    Colors = @{
+    Colors                        = @{
         Command            = 'blue'
-        Number             = 'red'
-        Operator           = '#FF8000'
-        Type               = 'magenta'
-        Parameter          = 'Green'
-        Variable           = 'Green'
-        ContinuationPrompt = 'Gray'
-        Default            = 'yellow'
-      }
+        Number             = 'Darkyellow'
+        Member             = 'Darkyellow'
+        Operator           = 'Darkyellow'
+        Type               = 'Darkyellow'
+        Variable           = 'DarkGreen'
+        Parameter          = 'DarkGreen'
+        ContinuationPrompt = 'DarkGray'
+        Default            = 'Darkyellow'
+    }
 }
 
 #Set-PSReadLineOption @PSReadLineOptions -PredictionViewStyle ListView
@@ -49,8 +51,9 @@ function md5 { Get-FileHash -Algorithm MD5 $args }
 function sha1 { Get-FileHash -Algorithm SHA1 $args }
 function sha256 { Get-FileHash -Algorithm SHA256 $args }
 
-# lsd
-function ll {lsd -la}
+# eza
+function listlong { eza --icons -lah --color=auto --group-directories-first --hyperlink }
+function ls { eza --icons --grid --color=auto --group-directories-first --hyperlink }
 
 # edit profile with notepad
 function Edit-Profile {
@@ -75,7 +78,7 @@ function fz {
 }
 
 # cd home folder
-Function CDH {Set-Location -Path ~ }
+Function CDH { Set-Location -Path ~ }
 
 
 # open as admin
@@ -88,25 +91,12 @@ function clearH {
     ([Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory())
 }
 
-# list files with lsd
-function listlong {
-    lsd -la
-}
 
 ### aliases ###
 Set-Alias -Name np -Value C:\Windows\notepad.exe
 Set-Alias -Name goh -Value CDH
 Set-Alias -Name yt -Value yt-dlp
 Set-Alias -Name up -Value Update-profile
-Set-Alias -Name ls -Value lsd
+Set-Alias -Name ls -Value eza
 Set-Alias -Name ll -Value listlong
 Set-Alias admin Open-CurrentFolderAsAdmin
-
-
-
-
-
-
-
-
-
