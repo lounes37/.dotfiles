@@ -1,0 +1,12 @@
+[windows]
+installs = false
+
+[windows.links]
+"alacritty_windows.toml" = "~/AppData/Roaming/alacritty/alacritty.toml"
+
+
+[linux]
+installs = false
+
+# ["linux|darwin".links]
+# "starship.toml" = "~/.config/starship.toml"

@@ -1,0 +1,44 @@
+theme = "ayu_evolve"
+
+[editor]
+line-number = "absolute"
+color-modes = true
+cursorline = true
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+# center = ["file-name"]
+right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "total-line-numbers",
+  "position-percentage",
+  "file-encoding",
+  "file-line-ending",
+  "separator",
+  "file-type",
+  "version-control",
+]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+C-r = ":config-reload"
+"C-s" = ":w"                           # Ctrl-s saves the current file 
+y = "yank_main_selection_to_clipboard" # y yanks selection to clipboard
+p = "paste_clipboard_before"           # p pastes clipboard before
+
+[editor.lsp]
+display-inlay-hints = true

@@ -1,0 +1,115 @@
+live_config_reload = true
+
+#import = [
+#".config/alacritty/nord.toml"
+#]
+
+[shell]
+# Windows
+program = "pwsh"
+args = ["-NoLogo", "-WorkingDirectory ~"]
+
+[cursor]
+style = { blinking = "On", shape = "Block" }
+
+[font]
+size = 13.0
+
+[font.normal]
+#family = "CaskaydiaCove Nerd Font"
+family = "JetBrainsMono Nerd Font"
+
+[scrolling]
+history = 5000
+multiplier = 3
+
+[window]
+decorations = "full"
+dynamic_padding = true
+dynamic_title = true
+padding = { x = 3, y = 3 }
+opacity = 1.0
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 82
+lines = 24
+
+[selection]
+semantic_escape_chars = "<string>"
+
+##### Colors (Nord) #####
+
+# Default colors
+# [colors.primary]
+# background = '#2E3440'
+# foreground = '#D8DEE9'
+
+# # Normal colors
+# [colors.normal]
+# black   = '#3B4252'
+# red     = '#BF616A'
+# green   = '#A3BE8C'
+# yellow  = '#EBCB8B'
+# blue    = '#81A1C1'
+# magenta = '#B48EAD'
+# cyan    = '#88C0D0'
+# white   = '#E5E9F0'
+
+# # Bright colors
+# [colors.bright]
+# black   = '#4C566A'
+# red     = '#BF616A'
+# green   = '#A3BE8C'
+# yellow  = '#EBCB8B'
+# blue    = '#81A1C1'
+# magenta = '#B48EAD'
+# cyan    = '#8FBCBB'
+# white   = '#ECEFF4'
+
+##### Colors (Gruvbox dark) #####
+
+# Default colors
+[colors.primary]
+background = '#282828'
+foreground = '#ebdbb2'
+
+# # Normal colors
+[colors.normal]
+black = '#282828'
+red = '#cc241d'
+green = '#98971a'
+yellow = '#d79921'
+blue = '#458588'
+magenta = '#b16286'
+cyan = '#689d6a'
+white = '#a89984'
+
+## Bright colors
+[colors.bright]
+black = '#928374'
+red = '#fb4934'
+green = '#b8bb26'
+yellow = '#fabd2f'
+blue = '#83a598'
+magenta = '#d3869b'
+cyan = '#8ec07c'
+white = '#ebdbb2'
+
+[[hints.enabled]]
+# command = "xdg-open" # On Linux/BSD
+# command = "open" # On macOS
+command = { program = "cmd", args = ["/c", "start", ""] }                                                                                                 # On Windows
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "U", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+
+[keyboard]
+bindings = [
+    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+    { key = "Q", mods = "Control|Shift", action = "Quit" },
+]

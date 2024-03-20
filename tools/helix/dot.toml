@@ -1,0 +1,10 @@
+[windows.installs]
+cmd = "winget install --id=Helix.Helix -e --accept-package-agreements --accept-source-agreements"
+
+[windows.links]
+"config.toml" = "~/AppData/Roaming/helix/config.toml"
+"languages.toml" = "~/AppData/Roaming/helix/languages.toml"
+
+
+[linux]
+installs = false

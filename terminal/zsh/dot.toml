@@ -1,5 +1,19 @@
-[global]
+[windows]
 installs = false
 
-[darwin.links]
+[linux.installs]
+cmd = """
+if [ "$(cat /etc/os-release | grep -c "ID=fedora")" -gt 0 ]; then
+    sudo dnf install -y zsh
+elif [ "$(cat /etc/os-release | grep -c "ID=ubuntu")" -gt 0 ]; then
+    sudo apt-get install -y zsh
+else
+    echo "Unsupported os"
+    exit 1
+fi
+"""
+[darwin]
+installs = false
+
+["linux|darwin".links]
 ".zshrc" = "~/.zshrc"

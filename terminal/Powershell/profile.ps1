@@ -4,15 +4,15 @@ $PSReadLineOptions = @{
     HistoryNoDuplicates           = $true
     HistorySearchCursorMovesToEnd = $true
     Colors                        = @{
-        Command            = 'blue'
-        Number             = 'Darkyellow'
-        Member             = 'Darkyellow'
-        Operator           = 'Darkyellow'
-        Type               = 'Darkyellow'
-        Variable           = 'DarkGreen'
-        Parameter          = 'DarkGreen'
-        ContinuationPrompt = 'DarkGray'
-        Default            = 'Darkyellow'
+        Command            = '#98971a' #green
+        Number             = '#d79921' #yellow
+        Member             = '#458588' #blue
+        Operator           = '#458588' #blue
+        Type               = '#d79921' #yellow
+        Variable           = '#458588' #blue
+        Parameter          = '#cc241d' #red
+        ContinuationPrompt = '#98971a' #green
+        Default            = '#d79921' #cyan
     }
 }
 
@@ -53,7 +53,7 @@ function sha256 { Get-FileHash -Algorithm SHA256 $args }
 
 # eza
 function listlong { eza --icons -lah --color=auto --group-directories-first --hyperlink }
-function list { eza --icons --grid --color=auto --group-directories-first --hyperlink }
+function list { eza --icons  --grid --color=auto --group-directories-first --hyperlink }
 
 # edit profile with notepad
 function Edit-Profile {
