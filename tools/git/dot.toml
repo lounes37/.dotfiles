@@ -1,5 +1,5 @@
-[windows.installs]
-cmd = "winget install git"
+[windows]
+installs = false
 
 [linux.installs]
 cmd = "sudo apt-get update && sudo apt-get install git"

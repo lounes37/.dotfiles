@@ -1,7 +1,7 @@
-[windows]
-installs = "winget install nilesoft.shell"
+# [windows]
+# installs = "winget install nilesoft.shell"
 # [windows.links]
 # "shell.nss" = "C:\\Program Files\\Nilesoft Shell\\shell.nss"
 
-[linux]
-installs = false
+# [linux]
+# installs = false

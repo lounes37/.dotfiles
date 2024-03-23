@@ -1,9 +1,6 @@
 [windows]
-# cmd = """
-# Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-# irm get.scoop.sh | iex
-# """
-installs = "irm get.scoop.sh | iex"
+installs = "scoop import https://gist.githubusercontent.com/lounes37/6379fc796708ef0e1097fadca4bc5ea0/raw/76d399af5d6789e2d5a98edde0c633f15e6e9159/scoop_apps.json  | out-null"
+depends = [ "../os/winget" ]
 
 ["linux|darwin"]
 installs = false

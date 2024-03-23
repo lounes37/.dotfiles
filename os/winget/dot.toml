@@ -1,0 +1,5 @@
+[windows.installs]
+cmd = "winget import --disable-interactivity --accept-source-agreements --accept-package-agreements --accept-source-agreements .dotfiles/os/winget/winget-exports.json  | out-null"
+
+["linux|darwin"]
+installs = false

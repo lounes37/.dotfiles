@@ -1,5 +1,4 @@
 ### PSReadLine ###
-### PSReadLine ###
 $PSReadLineOptions = @{
     HistoryNoDuplicates           = $true
     HistorySearchCursorMovesToEnd = $true

@@ -1,6 +1,6 @@
-[windows]
-installs = "scoop install starship"
-depends = ["../tools/scoop"]
+#[windows]
+#installs = "scoop install starship"
+#depends = ["../tools/scoop"]
 
 [windows.links]
 "starship.toml" = "~/.config/starship/starship.toml"
