@@ -49,9 +49,6 @@
           "PackageIdentifier": "Notepad++.Notepad++"
         },
         {
-          "PackageIdentifier": "Microsoft.Office"
-        },
-        {
           "PackageIdentifier": "Microsoft.OneDrive"
         },
         {
@@ -59,9 +56,6 @@
         },
         {
           "PackageIdentifier": "SumatraPDF.SumatraPDF"
-        },
-        {
-          "PackageIdentifier": "Twilio.Authy"
         },
         {
           "PackageIdentifier": "Obsidian.Obsidian"
@@ -109,9 +103,6 @@
           "PackageIdentifier": "VideoLAN.VLC"
         },
         {
-          "PackageIdentifier": "PuTTY.PuTTY"
-        },
-        {
           "PackageIdentifier": "sylikc.JPEGView"
         },
         {
@@ -122,9 +113,6 @@
         },
         {
           "PackageIdentifier": "Helix.Helix "
-        },
-        {
-          "PackageIdentifier": "Kotatogram.Kotatogram"
         },
         {
           "PackageIdentifier": "Levminer.Authme"

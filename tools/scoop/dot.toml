@@ -1,6 +1,6 @@
-[windows]
-installs = "scoop import https://gist.githubusercontent.com/lounes37/6379fc796708ef0e1097fadca4bc5ea0/raw/76d399af5d6789e2d5a98edde0c633f15e6e9159/scoop_apps.json  | out-null"
-depends = [ "../os/winget" ]
+[windows.installs]
+cmd = "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.github.com/lounes37/fca82f71e8b108b4460e5ada9ba659f0/raw/scoop_install.ps1'))"
+depends = [ "tools/winget" ]
 
 ["linux|darwin"]
 installs = false
