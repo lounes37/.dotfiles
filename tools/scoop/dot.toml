@@ -1,6 +1,6 @@
 [windows.installs]
 cmd = "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.github.com/lounes37/fca82f71e8b108b4460e5ada9ba659f0/raw/scoop_install.ps1'))"
-depends = [ "tools/winget" ]
+depends = [ "winget" ]
 
 ["linux|darwin"]
 installs = false

@@ -1,5 +1,5 @@
 [windows.installs]
-cmd = "winget import --disable-interactivity --accept-source-agreements --accept-package-agreements --accept-source-agreements .dotfiles/os/winget/winget-exports.json  | out-null"
+cmd = "Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/lounes37/726ad40e2f20d8c4f263961071ac830e/raw//winget_install.ps1'))"
 
 ["linux|darwin"]
 installs = false
